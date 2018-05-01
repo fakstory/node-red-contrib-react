@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React Ui</title>
+  </head>
+  <body>
+	<div id="app">
+		<h1>
+			Welcome to UIbuilder for Node-RED
+		</h1>
+		<p>
+			This is the default web page. If you open the developer console, you will see some debug output.
+			You can also see some dynamic data updating below, thanks to JQuery.
+		</p>
+		<p>
+			Please see the README for the
+			<a href="https://github.com/TotallyInformation/node-red-contrib-uibuilder">node-red-contrib-uibuilder</a>
+			node for details on how to use UIbuilder.
+		</p>
+		<h2>Dynamic Data (via JQuery)</h2>
+		<p>UIBuilder Front-End Version: <span id="feVersion"></span></p>
+		<p>Websocket State: <span id="socketConnectedState"></span></p>
+		<p>Messages Received: <span id="msgsReceived"></span></p>
+		<p>Control Messages Received: <span id="msgsControl"></span></p>
+		<p>Messages Sent: <span id="msgsSent"></span></p>
+		<p>Last Message Received:</p>
+		<code id="showMsg"></code>
+		<p>Last Control Message Received:</p>
+		<code id="showCtrlMsg"></code>
+		<p>Last Message Sent:</p>
+		<code id="showMsgSent"></code>
+	</div>
+	<div id="root">
+		<div id="app">
+		</div>
+	</div>
+  </body>
+    <!-- The "app" element is where the code for dynamic updates is attached -->
+
+    <!-- These MUST be in the right order. Note no leading / -->
+    <!-- REQUIRED: Socket.IO is loaded only once for all instances
+                   Without this, you don't get a websocket connection -->
+    <!-- <script src="/uibuilder/socket.io/socket.io.js"></script>-->
+    <!-- Note no leading / -->
+    <!-- OPTIONAL: JQuery can be removed if not required -->
+    <!-- <script src="./vendor/jquery/dist/jquery.min.js"></script>-->
+    <!-- REQUIRED: Sets up Socket listeners and the msg object -->
+    <!-- <script src="./uibuilderfe.min.js"></script> -->
+    <!-- OPTIONAL: You probably want this. Put your custom code here -->
+    <!--<script src="./index.js"></script>-->
+</html>

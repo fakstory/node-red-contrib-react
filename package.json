@@ -1,0 +1,22 @@
+{
+  "name": "uibuilder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "scripts": {
+    "start_unix": "./node_modules/node-red/red.js -v -u .",
+    "start": "node node_modules/node-red/red.js -v -u .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node postinstall",
+    "build": "build_react"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "moonjs": "^0.11.0",
+    "node-red": "^0.18.4",
+    "node-red-contrib-uibuilder": "^1.0.6",
+    "reactjs": "^1.0.0",
+    "riot": "^3.9.0"
+  }
+}

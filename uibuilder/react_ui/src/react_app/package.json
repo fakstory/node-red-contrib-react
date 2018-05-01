@@ -1,0 +1,21 @@
+{
+  "name": "react_app",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Alexandre Gaudet",
+  "homepage": "/react_ui",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "node-red-contrib-uibuilder": "^1.0.6",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
