@@ -90,50 +90,6 @@ class UserData extends Component{
 		);
 
 	}
-	//uibuilder.test()
-
-
-	//
-		// NODE-RED MESSAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		// uibuilder.onChange('msgsReceived',(newVal) =>{
-		// 	console.info('New msg sent to us from Node-RED over Socket.IO.TotalCount:',newVal)
-		// 	this.setState({
-		// 	  msgReceived: newVal
-		// 	})
-		// })
-	//
-	// 	//IfSocket.IOconnects/disconnects
-	// 	uibuilder.onChange('ioConnected',(newVal) =>{
-	// 		console.info('Socket.IOConnectionStatusChanged:',newVal)
-	// 		this.setState({
-	// 		  webSocket: newVal
-	// 		})
-	// 	})
-	//
-	// 	//IfamessageissentbacktoNode-RED
-	// 	uibuilder.onChange('msgsSent',(newVal) =>{
-	// 		console.info('New msg sent to Node-RED over Socket.IO.TotalCount:',newVal)
-	// 		this.setState({
-	// 		  msgSent: newVal
-	// 		})
-	// 	})
-	//
-	// 	//IfwereceiveacontrolmessagefromNode-RED
-	// 	uibuilder.onChange('msgsCtrl',(newVal) =>{
-	// 		console.info('New control msg sent to us from Node-RED over Socket.IO.TotalCount:',newVal)
-	// 		this.setState({
-	// 		  controlMsgReceived: newVal
-	// 		})
-	// 	})
-	//
-	// 	//Manually send a message back to Node-RED after 2 seconds
-	// 	window.setTimeout(function(){
-	// 	console.info('Sending a message back to Node-RED-after2sdelay')
-	// 	uibuilder.send({'topic':'uibuilderfe','payload':'I am a message sent from the uibuilder front end'})
-	// 	},2000)
-	//
-	// }
-
 
 	componentWillUnmount(){
 		this.state.ui.destructor();
